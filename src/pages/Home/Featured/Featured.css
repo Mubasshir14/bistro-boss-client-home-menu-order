@@ -1,0 +1,11 @@
+/* .featured-item {
+ 
+
+    /* background: */
+        /* linear-gradient(rgba(21, 21, 21, 0.7), rgba(21, 21, 21, 0.7)), Gradient overlay */
+        /* url('../../../assets/home/featured.jpg') center / cover; */
+/* } */ 
+
+.featured-item{
+    background-image: url('../../../assets/home/featured.jpg');
+}

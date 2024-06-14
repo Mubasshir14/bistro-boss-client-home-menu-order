@@ -1,0 +1,24 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
+
+.carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .carousel-status {
+    display: none;
+}
+
+.carousel .control-arrow {
+    opacity: 0.6;
+}
+
+.carousel .control-arrow:hover {
+    opacity: 1;
+}
