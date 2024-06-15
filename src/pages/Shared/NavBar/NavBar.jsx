@@ -1,20 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 const NavBar = () => {
     const navOptions = 
     <>
-        <li><a>Item 1</a></li>
-        <li>
-            <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                </ul>
-            </details>
-        </li>
-        <li><a>Item 3</a></li>
+        <li><Link className="" to='/'>HOME</Link></li>
+        <li><Link >DASHBOARD</Link></li>
+        <li><Link to='/menu'>OUR MENU</Link></li>
+        <li><Link to='/order'>ORDER FOOD</Link></li>
+       
     </>
     return (
         <>
@@ -24,14 +18,14 @@ const NavBar = () => {
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabIndex={0} className="menu text-[#CD9003] menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             {navOptions}
                         </ul>
                     </div>
                     <Link className=" text-2xl font-extrabold font-cinzel">BISTRO BOSS <br /> <span className="text-xl font-bold">R E S T A U R A N T</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu text-[#CD9003] menu-horizontal px-1 font-bold ">
                         {navOptions}
                     </ul>
                 </div>
